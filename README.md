@@ -33,7 +33,22 @@ flowchart TD
         P7["07_UserInfos.c<br/>(VLA Arrays, Accumulation & Statistics)"]
     end
 
-    S1 --> S2 --> S3
+    subgraph S4 [Phase 4: Arrays & Pointers]
+        P8["08_ArrayInputDisplay.c<br/>(Array Input & Display)"]
+        P9["09_ArrayPointerInputDisplay.c<br/>(Pointer Arithmetic)"]
+        P10["10_MergeTwoSortedArrays.c<br/>(Sorted Merge)"]
+    end
+
+    subgraph S5 [Phase 5: Linked Lists & Dynamic Memory]
+        P11["11_LinkedListStaticNodes.c<br/>(Static Nodes)"]
+        P12["12_LinkedListArrayAlloc.c<br/>(Array-Allocated Nodes)"]
+        P13["13_LinkedListManualNodes.c<br/>(Manual Node Linking)"]
+        P14["14_LinkedListCreateDisplay.c<br/>(Create & Display)"]
+        P15["15_LinkedListMenuDriven.c<br/>(Menu-Driven Operations)"]
+        P16["16_LinkedListMenuDrivenWhile.c<br/>(While-Loop Menu)"]
+    end
+
+    S1 --> S2 --> S3 --> S4 --> S5
 ```
 
 ---
@@ -49,6 +64,15 @@ flowchart TD
 | [`05_LargestOfThreeNumbers.c`](./02_Playground/05_LargestOfThreeNumbers.c) | Multi-Condition Evaluation | Evaluates three numbers using compound logical operators (`&&`). |
 | [`06_AreaOfRectangleSquareCircle.c`](./02_Playground/06_AreaOfRectangleSquareCircle.c) | Switch Selection | Computes geometric surface areas based on interactive user shape selection. |
 | [`07_UserInfos.c`](./02_Playground/07_UserInfos.c) | Loops & Array Accumulation | Collects student marks into an array, calculates totals, averages, percentages, and eligibility status. |
+| [`08_ArrayInputDisplay.c`](./02_Playground/08_ArrayInputDisplay.c) | Array I/O | Reads N elements into an array and displays them back. |
+| [`09_ArrayPointerInputDisplay.c`](./02_Playground/09_ArrayPointerInputDisplay.c) | Pointers & Arrays | Performs array input and display using pointer arithmetic. |
+| [`10_MergeTwoSortedArrays.c`](./02_Playground/10_MergeTwoSortedArrays.c) | Sorted Merge | Merges two sorted arrays into a single sorted array. |
+| [`11_LinkedListStaticNodes.c`](./02_Playground/11_LinkedListStaticNodes.c) | Linked List Basics | Builds a static three-node linked list and prints each value. |
+| [`12_LinkedListArrayAlloc.c`](./02_Playground/12_LinkedListArrayAlloc.c) | Dynamic Nodes | Links array-allocated nodes into a list and frees them. |
+| [`13_LinkedListManualNodes.c`](./02_Playground/13_LinkedListManualNodes.c) | Manual Node Linking | Builds nodes with `malloc`, reading one value as input. |
+| [`14_LinkedListCreateDisplay.c`](./02_Playground/14_LinkedListCreateDisplay.c) | Dynamic List | Creates an N-node list from user input and displays it. |
+| [`15_LinkedListMenuDriven.c`](./02_Playground/15_LinkedListMenuDriven.c) | Menu-Driven List | Inserts at beginning/end and displays via an interactive menu. |
+| [`16_LinkedListMenuDrivenWhile.c`](./02_Playground/16_LinkedListMenuDrivenWhile.c) | While-Loop Menu | Same menu-driven list controlled by a `while` loop. |
 
 ---
 
@@ -140,6 +164,15 @@ Two folders separate programs by purpose:
 │   ├── 04_LargestOfTwoNumbers.c              # Two-variable comparison
 │   ├── 05_LargestOfThreeNumbers.c            # Three-variable comparison
 │   ├── 06_AreaOfRectangleSquareCircle.c      # Menu-driven shape area calculator
-│   └── 07_UserInfos.c                        # Student records and mark aggregation
+│   ├── 07_UserInfos.c                        # Student records and mark aggregation
+│   ├── 08_ArrayInputDisplay.c                # Array input and display
+│   ├── 09_ArrayPointerInputDisplay.c         # Array I/O via pointers
+│   ├── 10_MergeTwoSortedArrays.c             # Merge of two sorted arrays
+│   ├── 11_LinkedListStaticNodes.c            # Static 3-node linked list
+│   ├── 12_LinkedListArrayAlloc.c             # Array-allocated linked nodes
+│   ├── 13_LinkedListManualNodes.c            # Manually linked dynamic nodes
+│   ├── 14_LinkedListCreateDisplay.c          # Create and display linked list
+│   ├── 15_LinkedListMenuDriven.c             # Menu-driven linked list ops
+│   └── 16_LinkedListMenuDrivenWhile.c        # While-loop menu linked list
 └── README.md                                 # Coursework index and lab guide
 ```
