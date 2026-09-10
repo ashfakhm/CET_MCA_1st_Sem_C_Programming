@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main()
+int main(void)
 {
     double number1, number2;
     printf("Please Enter The Numbers You Want To Know Which Is Largest");

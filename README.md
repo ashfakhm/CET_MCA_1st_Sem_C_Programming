@@ -26,7 +26,7 @@ flowchart TD
     subgraph S2 [Phase 2: Conditional Branching & Control Flow]
         P4["04_LargestOfTwoNumbers.c<br/>(Binary Comparison)"]
         P5["05_LargestOfThreeNumbers.c<br/>(Compound Relational Logic)"]
-        P6["06_AreaOfRectangle,Square,Circle.c<br/>(Menu-Driven Switch Dispatch)"]
+        P6["06_AreaOfRectangleSquareCircle.c<br/>(Menu-Driven Switch Dispatch)"]
     end
 
     subgraph S3 [Phase 3: Iteration & Composite Processing]
@@ -42,13 +42,13 @@ flowchart TD
 
 | Program | Core Concept | Description |
 | :--- | :--- | :--- |
-| [`01_HelloWorld.c`](./01_HelloWorld.c) | Console Output | Initializes program execution and prints text to standard output (`stdout`). |
-| [`02_InputName.c`](./02_InputName.c) | String I/O | Reads formatted string input into a character buffer and displays greetings. |
-| [`03_AddTwoNumber.c`](./03_AddTwoNumber.c) | Arithmetic Operations | Accepts double-precision floating-point inputs and computes their sum. |
-| [`04_LargestOfTwoNumbers.c`](./04_LargestOfTwoNumbers.c) | Relational Logic | Compares two numeric values using `if-else` branching to identify the maximum. |
-| [`05_LargestOfThreeNumbers.c`](./05_LargestOfThreeNumbers.c) | Multi-Condition Evaluation | Evaluates three numbers using compound logical operators (`&&`). |
-| [`06_AreaOfRectangle,Square,Circle.c`](./06_AreaOfRectangle,Square,Circle.c) | Switch Selection | Computes geometric surface areas based on interactive user shape selection. |
-| [`07_UserInfos.c`](./07_UserInfos.c) | Loops & Array Accumulation | Collects student marks into an array, calculates totals, averages, percentages, and eligibility status. |
+| [`01_HelloWorld.c`](./02_Playground/01_HelloWorld.c) | Console Output | Initializes program execution and prints text to standard output (`stdout`). |
+| [`02_InputName.c`](./02_Playground/02_InputName.c) | String I/O | Reads formatted string input into a character buffer and displays greetings. |
+| [`03_AddTwoNumber.c`](./02_Playground/03_AddTwoNumber.c) | Arithmetic Operations | Accepts double-precision floating-point inputs and computes their sum. |
+| [`04_LargestOfTwoNumbers.c`](./02_Playground/04_LargestOfTwoNumbers.c) | Relational Logic | Compares two numeric values using `if-else` branching to identify the maximum. |
+| [`05_LargestOfThreeNumbers.c`](./02_Playground/05_LargestOfThreeNumbers.c) | Multi-Condition Evaluation | Evaluates three numbers using compound logical operators (`&&`). |
+| [`06_AreaOfRectangleSquareCircle.c`](./02_Playground/06_AreaOfRectangleSquareCircle.c) | Switch Selection | Computes geometric surface areas based on interactive user shape selection. |
+| [`07_UserInfos.c`](./02_Playground/07_UserInfos.c) | Loops & Array Accumulation | Collects student marks into an array, calculates totals, averages, percentages, and eligibility status. |
 
 ---
 
@@ -61,7 +61,7 @@ All programs are written in standard C (C99/C11 compatible) and can be compiled 
 Run the compiler on the target source file:
 
 ```bash
-gcc -Wall -Wextra -std=c11 01_HelloWorld.c -o 01_HelloWorld
+gcc -Wall -Wextra -std=c11 02_Playground/01_HelloWorld.c -o 01_HelloWorld
 ```
 
 ### Step 2: Run
@@ -77,7 +77,7 @@ Execute the compiled binary directly in the terminal:
 To compile all source files in one pass:
 
 ```bash
-for file in *.c; do
+for file in 02_Playground/*.c; do
   gcc -Wall -std=c11 "$file" -o "${file%.c}"
 done
 ```
@@ -86,7 +86,7 @@ done
 
 ## Execution Walkthrough
 
-### Example 1: Menu-Driven Area Calculator (`06_AreaOfRectangle,Square,Circle.c`)
+### Example 1: Menu-Driven Area Calculator (`06_AreaOfRectangleSquareCircle.c`)
 
 ```text
 Please Enter What You Want To Find Area Of
@@ -124,14 +124,22 @@ As You're age is 18 and Equal Aged You are Eligible to vote
 
 ## Repository Structure
 
+Two folders separate programs by purpose:
+
+- `01_Actual_Lab_Problems/` — programs given by teachers in theory/lab classes for understanding concepts (not record programs).
+- `02_Playground/` — own practice programs written for the lab record.
+
 ```text
 .
-├── 01_HelloWorld.c                       # Basic Hello World program
-├── 02_InputName.c                        # String buffer reading
-├── 03_AddTwoNumber.c                     # Double-precision addition
-├── 04_LargestOfTwoNumbers.c              # Two-variable comparison
-├── 05_LargestOfThreeNumbers.c            # Three-variable comparison
-├── 06_AreaOfRectangle,Square,Circle.c   # Menu-driven shape area calculator
-├── 07_UserInfos.c                        # Student records and mark aggregation
-└── README.md                             # Coursework index and lab guide
+├── 01_Actual_Lab_Problems/
+│   └── .gitkeep                              # Teacher-given concept programs land here
+├── 02_Playground/
+│   ├── 01_HelloWorld.c                       # Basic Hello World program
+│   ├── 02_InputName.c                        # String buffer reading
+│   ├── 03_AddTwoNumber.c                     # Double-precision addition
+│   ├── 04_LargestOfTwoNumbers.c              # Two-variable comparison
+│   ├── 05_LargestOfThreeNumbers.c            # Three-variable comparison
+│   ├── 06_AreaOfRectangleSquareCircle.c      # Menu-driven shape area calculator
+│   └── 07_UserInfos.c                        # Student records and mark aggregation
+└── README.md                                 # Coursework index and lab guide
 ```

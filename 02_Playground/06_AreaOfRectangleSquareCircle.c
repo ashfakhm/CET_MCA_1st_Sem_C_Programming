@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main()
+int main(void)
 {
     printf("Please Enter What You Want To Find Area Of\n");
 

@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void main()
+int main(void)
 {
     double number1, number2;
     printf("Please Enter The Two Numbers You Want To Know The Sums");
@@ -14,5 +14,7 @@ void main()
     double sum;
     sum = number1 + number2;
 
-    printf("The Sum Of Two Numbers Is %d", sum);
+    printf("The Sum Of Two Numbers Is %f", sum);
+
+    return 0;
 }

@@ -1,13 +1,13 @@
 #include <stdio.h>
 
-int main()
+int main(void)
 {
-   char username[25];
+    char username[25];
     int age;
     int subjectcount;
 
     printf("Enter Your Name: ");
-    scanf("%s", username);
+    scanf("%24s", username);
 
     printf("Enter Your Age: ");
     scanf("%d", &age);
@@ -18,6 +18,7 @@ int main()
     if (subjectcount <= 0)
     {
         printf("Invalid number of subjects.\n");
+        return 1;
     }
 
     int subjectmarks[subjectcount];
