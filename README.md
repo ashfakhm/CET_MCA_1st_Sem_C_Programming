@@ -55,6 +55,15 @@ flowchart TD
 
 ## Program Index
 
+### Actual Lab Problems
+
+| Program | Core Concept | Description |
+| :--- | :--- | :--- |
+| [`01_Array_Operations.c`](./01_Actual_Lab_Problems/01_Array_Operations.c) | Array Insert/Delete/Search | Menu-driven array insert, delete, search and display using `malloc`. |
+| [`02_Stack_Operations.c`](./01_Actual_Lab_Problems/02_Stack_Operations.c) | Stack Push/Pop | Menu-driven stack push, pop and display with overflow/underflow handling. |
+
+### Playground Programs
+
 | Program | Core Concept | Description |
 | :--- | :--- | :--- |
 | [`01_HelloWorld.c`](./02_Playground/01_HelloWorld.c) | Console Output | Initializes program execution and prints text to standard output (`stdout`). |
@@ -101,7 +110,7 @@ Execute the compiled binary directly in the terminal:
 To compile all source files in one pass:
 
 ```bash
-for file in 02_Playground/*.c; do
+for file in 01_Actual_Lab_Problems/*.c 02_Playground/*.c; do
   gcc -Wall -std=c11 "$file" -o "${file%.c}"
 done
 ```
@@ -156,7 +165,8 @@ Two folders separate programs by purpose:
 ```text
 .
 ├── 01_Actual_Lab_Problems/
-│   └── .gitkeep                              # Teacher-given concept programs land here
+│   ├── 01_Array_Operations.c                # Menu-driven array insert/delete/search/display
+│   └── 02_Stack_Operations.c                # Menu-driven stack push/pop/display
 ├── 02_Playground/
 │   ├── 01_HelloWorld.c                       # Basic Hello World program
 │   ├── 02_InputName.c                        # String buffer reading
