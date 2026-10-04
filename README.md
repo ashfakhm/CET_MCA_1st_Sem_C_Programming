@@ -59,8 +59,13 @@ flowchart TD
 
 | Program | Core Concept | Description |
 | :--- | :--- | :--- |
-| [`01_Array_Operations.c`](./01_Actual_Lab_Problems/01_Array_Operations.c) | Array Insert/Delete/Search | Menu-driven array insert, delete, search and display using `malloc`. |
-| [`02_Stack_Operations.c`](./01_Actual_Lab_Problems/02_Stack_Operations.c) | Stack Push/Pop | Menu-driven stack push, pop and display with overflow/underflow handling. |
+| [`01_merge_sorted_arrays.c`](./01_Actual_Lab_Problems/01_merge_sorted_arrays.c) | Sorted Merge | Merges two user-input sorted integer arrays into a single sorted array. |
+| [`02_array_operations.c`](./01_Actual_Lab_Problems/02_array_operations.c) | Array Insert/Delete/Search | Menu-driven array insertion, deletion, linear search, and display. |
+| [`03_linked_list_operations.c`](./01_Actual_Lab_Problems/03_linked_list_operations.c) | Singly Linked List Operations | Menu-driven singly linked list with insertion/deletion at start, end, and position, search, and display. |
+| [`04_stack_using_linked_list.c`](./01_Actual_Lab_Problems/04_stack_using_linked_list.c) | Dynamic Stack | Dynamic linked-list implementation of stack with push, pop, peek, and display. |
+| [`05_queue_using_linked_list.c`](./01_Actual_Lab_Problems/05_queue_using_linked_list.c) | Dynamic Queue | Dynamic linked-list implementation of FIFO queue with enqueue, dequeue, and display. |
+| [`06_circular_queue_using_array.c`](./01_Actual_Lab_Problems/06_circular_queue_using_array.c) | Circular Array Queue | Fixed-capacity circular queue using modular arithmetic with enqueue, dequeue, and display. |
+| [`07_doubly_linked_list.c`](./01_Actual_Lab_Problems/07_doubly_linked_list.c) | Doubly Linked List Operations | Menu-driven doubly linked list supporting insertion/deletion at start, end, and position, and traversal. |
 
 ### Playground Programs
 
@@ -82,6 +87,22 @@ flowchart TD
 | [`14_LinkedListCreateDisplay.c`](./02_Playground/14_LinkedListCreateDisplay.c) | Dynamic List | Creates an N-node list from user input and displays it. |
 | [`15_LinkedListMenuDriven.c`](./02_Playground/15_LinkedListMenuDriven.c) | Menu-Driven List | Inserts at beginning/end and displays via an interactive menu. |
 | [`16_LinkedListMenuDrivenWhile.c`](./02_Playground/16_LinkedListMenuDrivenWhile.c) | While-Loop Menu | Same menu-driven list controlled by a `while` loop. |
+
+### Playground Practice & Scratch Files (Extras)
+
+> [!NOTE]
+> The following files in `02_Playground/` are exploratory practice drafts, learning experiments, and sandbox snippets written during lab sessions (some are partial or incomplete implementations).
+
+| Program | Topic | Status & Description |
+| :--- | :--- | :--- |
+| [`extras_01_stack_using_linked_list.c`](./02_Playground/extras_01_stack_using_linked_list.c) | Stack via Linked List | Practice implementation with push, pop, peek, and display. |
+| [`extras_02_basic_linked_list.c`](./02_Playground/extras_02_basic_linked_list.c) | Linked List Basics | Simple node allocation and linking demo. |
+| [`extras_03_incomplete_linked_list.c`](./02_Playground/extras_03_incomplete_linked_list.c) | Linked List Draft | Scratch/in-progress linked list node input loop. |
+| [`extras_04_incomplete_linked_list_menu.c`](./02_Playground/extras_04_incomplete_linked_list_menu.c) | Menu List Draft | Scratch/incomplete menu-driven insertion draft. |
+| [`extras_05_empty_linked_list.c`](./02_Playground/extras_05_empty_linked_list.c) | Node Structure Skeleton | Practice starter skeleton for struct node pointers. |
+| [`extras_06_basic_array.c`](./02_Playground/extras_06_basic_array.c) | Array I/O Draft | Early practice array element input and print. |
+| [`extras_07_array_pointer.c`](./02_Playground/extras_07_array_pointer.c) | Array Pointer Draft | Early practice reading array via pointer iteration. |
+| [`extras_08_merge_arrays.c`](./02_Playground/extras_08_merge_arrays.c) | Array Merge Draft | Scratch experiment merging two unsorted/sorted inputs. |
 
 ---
 
@@ -165,8 +186,13 @@ Two folders separate programs by purpose:
 ```text
 .
 ├── 01_Actual_Lab_Problems/
-│   ├── 01_Array_Operations.c                # Menu-driven array insert/delete/search/display
-│   └── 02_Stack_Operations.c                # Menu-driven stack push/pop/display
+│   ├── 01_merge_sorted_arrays.c             # Merging two sorted arrays into one
+│   ├── 02_array_operations.c                # Menu-driven array insert, delete, search, display
+│   ├── 03_linked_list_operations.c          # Singly linked list insert/delete at pos, search
+│   ├── 04_stack_using_linked_list.c         # Dynamic stack with push, pop, peek, display
+│   ├── 05_queue_using_linked_list.c         # Dynamic FIFO queue with enqueue, dequeue, display
+│   ├── 06_circular_queue_using_array.c      # Array circular queue with modular indexing
+│   └── 07_doubly_linked_list.c              # Doubly linked list insert/delete at pos, display
 ├── 02_Playground/
 │   ├── 01_HelloWorld.c                       # Basic Hello World program
 │   ├── 02_InputName.c                        # String buffer reading
@@ -183,6 +209,7 @@ Two folders separate programs by purpose:
 │   ├── 13_LinkedListManualNodes.c            # Manually linked dynamic nodes
 │   ├── 14_LinkedListCreateDisplay.c          # Create and display linked list
 │   ├── 15_LinkedListMenuDriven.c             # Menu-driven linked list ops
-│   └── 16_LinkedListMenuDrivenWhile.c        # While-loop menu linked list
+│   ├── 16_LinkedListMenuDrivenWhile.c        # While-loop menu linked list
+│   └── extras_*.c                            # Practice & exploratory sandbox files
 └── README.md                                 # Coursework index and lab guide
 ```
