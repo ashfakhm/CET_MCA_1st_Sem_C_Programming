@@ -48,7 +48,11 @@ flowchart TD
         P16["16_LinkedListMenuDrivenWhile.c<br/>(While-Loop Menu)"]
     end
 
-    S1 --> S2 --> S3 --> S4 --> S5
+    subgraph S6 [Phase 6: Trees & Searching]
+        P17["08_binary_search_tree.c<br/>(BST Insert, Delete & Search)"]
+    end
+
+    S1 --> S2 --> S3 --> S4 --> S5 --> S6
 ```
 
 ---
@@ -66,6 +70,7 @@ flowchart TD
 | [`05_queue_using_linked_list.c`](./01_Actual_Lab_Problems/05_queue_using_linked_list.c) | Dynamic Queue | Dynamic linked-list implementation of FIFO queue with enqueue, dequeue, and display. |
 | [`06_circular_queue_using_array.c`](./01_Actual_Lab_Problems/06_circular_queue_using_array.c) | Circular Array Queue | Fixed-capacity circular queue using modular arithmetic with enqueue, dequeue, and display. |
 | [`07_doubly_linked_list.c`](./01_Actual_Lab_Problems/07_doubly_linked_list.c) | Doubly Linked List Operations | Menu-driven doubly linked list supporting insertion/deletion at start, end, and position, and traversal. |
+| [`08_binary_search_tree.c`](./01_Actual_Lab_Problems/08_binary_search_tree.c) | Binary Search Tree | Menu-driven binary search tree supporting insertion, deletion, searching, and inorder traversal. |
 
 ### Playground Programs
 
