@@ -52,7 +52,11 @@ flowchart TD
         P17["08_binary_search_tree.c<br/>(BST Insert, Delete & Search)"]
     end
 
-    S1 --> S2 --> S3 --> S4 --> S5 --> S6
+    subgraph S7 [Phase 7: Disjoint Sets]
+        P18["09_disjoint_set.c<br/>(Union-Find Operations)"]
+    end
+
+    S1 --> S2 --> S3 --> S4 --> S5 --> S6 --> S7
 ```
 
 ---
@@ -71,6 +75,7 @@ flowchart TD
 | [`06_circular_queue_using_array.c`](./01_Actual_Lab_Problems/06_circular_queue_using_array.c) | Circular Array Queue | Fixed-capacity circular queue using modular arithmetic with enqueue, dequeue, and display. |
 | [`07_doubly_linked_list.c`](./01_Actual_Lab_Problems/07_doubly_linked_list.c) | Doubly Linked List Operations | Menu-driven doubly linked list supporting insertion/deletion at start, end, and position, and traversal. |
 | [`08_binary_search_tree.c`](./01_Actual_Lab_Problems/08_binary_search_tree.c) | Binary Search Tree | Menu-driven binary search tree supporting insertion, deletion, searching, and inorder traversal. |
+| [`09_disjoint_set.c`](./01_Actual_Lab_Problems/09_disjoint_set.c) | Disjoint Set Union-Find | Creates separate sets and supports union, representative lookup, and parent-array display. |
 
 ### Playground Programs
 
@@ -197,7 +202,9 @@ Two folders separate programs by purpose:
 │   ├── 04_stack_using_linked_list.c         # Dynamic stack with push, pop, peek, display
 │   ├── 05_queue_using_linked_list.c         # Dynamic FIFO queue with enqueue, dequeue, display
 │   ├── 06_circular_queue_using_array.c      # Array circular queue with modular indexing
-│   └── 07_doubly_linked_list.c              # Doubly linked list insert/delete at pos, display
+│   ├── 07_doubly_linked_list.c              # Doubly linked list insert/delete at pos, display
+│   ├── 08_binary_search_tree.c              # Binary search tree insert, delete, search, traversal
+│   └── 09_disjoint_set.c                    # Disjoint set union-find operations
 ├── 02_Playground/
 │   ├── 01_HelloWorld.c                       # Basic Hello World program
 │   ├── 02_InputName.c                        # String buffer reading
